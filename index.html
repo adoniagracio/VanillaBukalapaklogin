@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ke Akun | Bukalapak</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Asset/Img/BUKA.JK.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="login-form-card">
+        <section class="login-form">
+          <div class="wrapper-top">
+            <h1 id="title">Login dulu, yuk</h1>
+            <div class="userinput-email" id="animation-email">
+              <div class="input-form" id="input-email-container">
+                <input type="text" id="userInput" placeholder="">
+                <label for="userInput" id="label-input">Nomor handphone atau email</label>
+              </div>
+              <span class="exmple" id="example">Misal: 081234567890, atau nama@email.com</span>
+            </div>
+            <div class="password-slide" id="slidetop">
+              <div class="password-slide-left" id="slideleft">
+                <div class="username-info" id="info-username-container">
+                  <div class="resultinput">
+                    <p class="input-result">Username</p>
+                    <p class="username-view"></p>
+                  </div>
+                  <button onclick="toggleEdit()">
+                    <img src="./Asset/Img/Cancle.png" alt="">
+                  </button>
+                </div>
+                <div class="passwordinput" id="input-password-container">
+                  <input type="password" id="userInput-password" placeholder="">
+                  <label for="userInput-password">password</label>
+                  <button onclick="togglePasswordVisibility(event)">
+                    <img id="eye-icon" src="./Asset/Img/eye-close.png" alt="">
+                  </button>
+                </div>
+                <a href="" class="forget-password">Lupa Password?</a>
+              </div>
+              <button class="login-btn" id="loginbtn">
+                <a href="">Login</a>
+              </button>
+            </div>
+            <div class="important">
+              <p>
+                <img src="./Asset/Img/important.png" alt="">
+                <span>Form harus diisi dulu ya</span>
+              </p>
+            </div>
+            <button class="next-btn" onclick="toggleInput()">Lanjut</button>
+            <p id="oruse">Atau login pakai</p>
+            <button class="google-option">
+              <img src="/Asset/Img/Googleicon.png" alt="">
+              <span>Google</span>
+            </button>
+            <div class="separator">
+              <span></span>
+            </div>
+            <div class="footer-card">
+              <span>Belum punya akun? <a> Daftar</a>
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
